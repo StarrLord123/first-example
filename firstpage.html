@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Customer Form</title>
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body class="container">
+        
+        <h1>Customer Form</h1>
+        <h2>Instructions</h2>
+        <ol>
+            <li>Enter Name</li>
+            <li>Enter Address</li>
+            <li>Enter job title</li>
+        </ol>
+
+        <h2 class="mini-heading">Customer Information</h2>
+        <form action="https://some-server.com/" method="post"></form>
+            <label for="customer-name">Customer Name:</label>
+            <input type="text" id="customer-name" name="customer-name"><br>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address">
+
+            <br>
+
+            <label for="job-title">Job Title:</label>
+            <select name="jt" id="job-title" required>
+                
+                <option value="" disabled selected>Please select</option>
+                <option value="trainee">Trainee</option>
+                <option value="professional">Professional</option>
+            </select>
+
+            <br>
+
+            <button class="button"type="submit">Send</button>
+        </form>
+
+    </body>
+</html>

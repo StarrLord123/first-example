@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <!-- Gets results from below, then assigns value to it -->
+    <script>
+        function greetMe() {
+            const name = document.getElementById("name").value;
+            const year = document.getElementById("year").value;
+            const currentYear = new Date().getFullYear();
+            const age = currentYear - year;
+            const results = document.getElementById("results");
+            results.innerHTML =`Hi ${name}, you are probably ${age} years old`;
+        }
+    </script>
+    
+    </head>
+
+    <body>
+
+
+            <p>
+                <label for="name">Name</label>
+                <!-- Don't need input name= as not sending the JS to anything -->
+                <input type="text" id="name">
+            </p>
+            <p>
+                <label for="year">Year of birth</label>
+                <input type="number" id="year">
+            </p>
+            <p>
+                <button onclick="greetMe()">Greet me</button>
+            </p>
+            <div id="results"></div>
+
+
+        </div>
+    </body>
+</html>
